@@ -1,0 +1,21 @@
+{
+    "name": "Learn Lounge",
+    "short_name": "LearnLounge",
+    "icons": [
+      {
+        "src": "/public/images/afterschool-icon192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/public/images/afterschool-icon192x192.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#FFFFFF",
+    "theme_color": "#1ea5da",
+    "display": "standalone"
+  }
+  

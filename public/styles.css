@@ -1,0 +1,243 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#app {
+    max-width: 800px; /* Increased max-width for better layout */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-image: radial-gradient(circle, #06bdc7 0%, #008cff 100%);
+    color: #fff;
+    padding: 10px;
+    font-family: bradley hand, cursive;
+}
+
+main {
+    text-align: center; /* Center main content */
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+.product {
+    box-sizing: border-box;
+    width: 50%; /* Adjusted width for better layout */
+    margin: 1%;
+    padding: 10px;
+    background-color: #fff; /* Added background color */
+    border: 1px solid #ccc; /* Added border */
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #1ea5da;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sortBox {
+    margin-bottom: 20px; /* Increased margin for better separation */
+}
+
+.product-container {
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px; /* Increased margin for better separation */
+    width: 300px; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+/* Add these styles to your existing CSS */
+.checkout-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.checkout-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.checkout-form h2 {
+    margin-top: 0;
+}
+
+.checkout-form p {
+    margin-bottom: 10px;
+}
+
+.checkout-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="number"],
+.checkout-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkout-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1ea5da;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.cart-item h3 {
+    margin-top: 0;
+}
+
+.cart-item figure {
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #d32f2f;
+}
+
+/* Improve styling for order information */
+.order-information {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.order-information h2 {
+    margin-top: 0;
+}
+
+.order-information .form-group {
+    margin-bottom: 10px;
+}
+
+.order-information label {
+    display: block;
+    font-weight: bold;
+}
+
+.order-information input[type="text"],
+.order-information input[type="number"],
+.order-information select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.order-information button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.order-information button:hover {
+    background-color: #1ea5da;
+}

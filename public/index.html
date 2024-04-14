@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Lounge - After School Classes</title>
+    <!-- Load Vue.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="learnlounge.webmanifest">
+    <script src="https://kit.fontawesome.com/59139d145c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- The element where Vue will mount -->
+    <div id="app">
+        <!-- AppHeader component -->
+        <header>
+            <h1 v-text="sitename"></h1>
+            <button @click='showCheckout'>
+                <!-- Display the number of items in the cart -->
+                {{ cartItemCount }}
+                <!-- Add the cart icon -->
+                <span class="fas fa-cart-plus"></span> Checkout
+            </button>
+        </header>
+        <!-- Main component -->
+        <main>
+            <div class="sortBox">
+                <!-- Sorting buttons -->
+                <button @click="updateSorting('subject')">Sort by Subject</button>
+                <button @click="updateSorting('price')">Sort by Price</button>
+                <button @click="updateSorting('location')">Sort by Location</button>
+                <button @click="updateSorting('spaces')">Sort by Spaces</button>
+                <button @click="toggleSortOrder">{{ order.sortOrder === 'asc' ? 'Descending' : 'Ascending' }}</button>
+            </div>
+            <!-- Lesson component -->
+            <lessoncomponent.vue :lessons="lessons"></lessoncomponent.vue>
+            <!-- Checkout component -->
+            <checkoutcomponent.vue v-if="showCheckoutComponent"></checkoutcomponent.vue>
+        </main>
+    </div>
+
+</body>
+</html>

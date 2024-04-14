@@ -1,6 +1,7 @@
 {
   "name": "afterschool",
   "version": "0.1.0",
+  "homepage": "https://yourusername.github.io/cw3/",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
-  },  
+  },
   "dependencies": {
     "core-js": "^3.8.3",
     "mongodb": "^6.5.0",

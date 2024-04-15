@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  pre_build:
+    commands:
+      - echo Pre-build steps...
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build # Update or replace this with your actual build command
+  post_build:
+    commands:
+      - echo Starting the application...
+      - node src/server.js # This command runs your server.js
+
+artifacts:
+  files:
+    - src/server.js
+    - build/**/* # Adjust this to include the files and directories you need
+
+cache:
+  paths:
+    - 'node_modules/**/*'
